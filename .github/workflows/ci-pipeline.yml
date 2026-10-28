@@ -20,7 +20,7 @@ jobs:
           python-version: '3.12'
 
       - name: Instalar dependencias
-        run: pip install -r requirements.txt
+        run: pip install -r workflows/devops/requirements.txt
 
       - name: Executar testes
-        run: python -m pytest
+        run: python -m pytest workflows/devops/tests/
